@@ -1,0 +1,32 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Korean Wheels Admin</title>
+<style>
+:root{--bg:#05060A;--panel:#0B0D14;--ink:#F3F0E9;--mute:#8D93A3;--line:#1B1F2B;--acc:#FF9838;color-scheme:dark}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 Manrope,system-ui,sans-serif}
+.w{max-width:1100px;margin:0 auto;padding:24px}h1{font-size:28px;margin:0}.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;gap:12px;flex-wrap:wrap}
+.tabs{display:flex;gap:8px;margin-bottom:20px}.tabs button,.b{font:inherit;padding:10px 18px;border-radius:99px;border:1px solid #ffffff2a;background:#ffffff0d;color:var(--ink);cursor:pointer}
+.tabs button.on,.b.p{background:var(--acc);color:#000;border-color:var(--acc);font-weight:700}.b.d{border-color:#d33;color:#f77}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px;margin-bottom:20px}
+.g{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}label{display:grid;gap:5px;font-size:12px;color:var(--mute)}
+input,select,textarea{font:inherit;padding:11px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink);width:100%}
+.row{display:flex;gap:14px;align-items:center;padding:12px 0;border-top:1px solid var(--line);flex-wrap:wrap}.row img,.row .ph{width:92px;height:62px;object-fit:cover;border-radius:8px;background:#1b1f2b}
+.row .i{flex:1;min-width:180px}.row small{color:var(--mute)}.tag{font-size:11px;border:1px solid var(--acc);color:var(--acc);padding:2px 8px;border-radius:99px;margin-left:6px}
+#msg{color:var(--acc);min-height:22px}.hide{display:none}
+</style></head><body><div class="w">
+<div id="login" class="card hide" style="max-width:380px;margin:12vh auto"><h1>Admin login</h1><p style="color:var(--mute)">Korean Wheels dashboard</p><form id="lf"><label>Password<input type="password" id="pw" autofocus required></label><p id="lm" style="color:#f77"></p><button class="b p" type="submit">Log in</button></form></div>
+<div id="app" class="hide">
+<div class="top"><h1>Korean Wheels · Admin</h1><div><a class="b" href="/" target="_blank" style="text-decoration:none">View site</a> <button class="b" id="out">Log out</button></div></div>
+<div class="tabs"><button id="t1" class="on">Cars</button><button id="t2">Bookings <span id="nb"></span></button></div>
+<p id="msg" role="status"></p>
+<div id="pc"><div class="card"><h2 id="ft" style="margin-top:0;font-size:20px">Add a car</h2><form id="cf">
+<div class="g"><label>Car name<input id="n" required maxlength="80" placeholder="Hyundai Tucson"></label><label>Brand<input id="b" list="bl" required maxlength="40"><datalist id="bl"><option>Hyundai</option><option>Kia</option><option>Genesis</option><option>Mercedes-Benz</option><option>KG Mobility</option></datalist></label>
+<label>Body type<select id="t"><option>SUV</option><option>Sedan</option><option>Hatchback</option><option>Coupe</option><option>Pickup</option><option>Van</option></select></label>
+<label>Year<input id="y" type="number" min="1990" max="2030" required></label><label>Mileage (km)<input id="k" type="number" min="0" required></label><label>Price (AED)<input id="p" type="number" min="0" required></label>
+<label>Highlight<input id="tag" maxlength="40" placeholder="GCC spec, One owner"></label><label>Photo<input id="im" type="file" accept="image/*"></label></div>
+<label style="margin-top:12px">Description<textarea id="desc" rows="3" maxlength="600"></textarea></label>
+<p style="color:var(--mute);margin:14px 0 6px">Ratings 0 to 100</p><div class="g" id="sts"></div>
+<label style="margin-top:12px;display:flex;gap:8px;align-items:center"><input type="checkbox" id="sold" style="width:auto"> Mark as sold (hides it from the public site)</label>
+<div style="margin-top:16px;display:flex;gap:10px"><button class="b p" type="submit" id="sv">Save car</button><button class="b" type="button" id="cl">Clear</button></div></form></div>
+<div class="card"><h2 style="margin-top:0;font-size:20px">Cars</h2><div id="cl2"></div></div></div>
+<div id="pb" class="hide"><div class="card"><h2 style="margin-top:0;font-size:20px">Booking requests</h2><div id="bl2"></div></div></div>
+</div></div>
+<script src="admin.js"></script></body></html>

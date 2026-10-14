@@ -1,0 +1,130 @@
+[
+ {
+  "n": "Hyundai Tucson",
+  "b": "Hyundai",
+  "t": "SUV",
+  "y": 2021,
+  "k": 58000,
+  "p": 72000,
+  "c": [
+   "#1f3a6b",
+   "#0f1a33"
+  ],
+  "tag": "GCC spec",
+  "img": "images/hyundai-tucson.jpg",
+  "uid": "seed-1",
+  "desc": ""
+ },
+ {
+  "n": "Kia Sportage",
+  "b": "Kia",
+  "t": "SUV",
+  "y": 2022,
+  "k": 41000,
+  "p": 78500,
+  "c": [
+   "#7a1f1a",
+   "#2a0d0c"
+  ],
+  "tag": "Full service history",
+  "img": "images/kia-sportage.jpg",
+  "uid": "seed-2",
+  "desc": ""
+ },
+ {
+  "n": "Genesis G80",
+  "b": "Genesis",
+  "t": "Sedan",
+  "y": 2020,
+  "k": 66000,
+  "p": 119000,
+  "c": [
+   "#2b2f3a",
+   "#0c0f16"
+  ],
+  "tag": "Luxury pick",
+  "img": "",
+  "uid": "seed-3",
+  "desc": ""
+ },
+ {
+  "n": "Hyundai Sonata",
+  "b": "Hyundai",
+  "t": "Sedan",
+  "y": 2021,
+  "k": 52000,
+  "p": 54000,
+  "c": [
+   "#3b5f8a",
+   "#162a45"
+  ],
+  "tag": "One owner",
+  "img": "images/hyundai-sonata.jpg",
+  "uid": "seed-4",
+  "desc": ""
+ },
+ {
+  "n": "Kia Sorento",
+  "b": "Kia",
+  "t": "SUV",
+  "y": 2021,
+  "k": 63000,
+  "p": 84000,
+  "c": [
+   "#33503f",
+   "#12211a"
+  ],
+  "tag": "7 seater",
+  "img": "images/kia-sorento.jpg",
+  "uid": "seed-5",
+  "desc": ""
+ },
+ {
+  "n": "Mercedes-Benz C-Class",
+  "b": "Mercedes-Benz",
+  "t": "Sedan",
+  "y": 2019,
+  "k": 72000,
+  "p": 98000,
+  "c": [
+   "#8a8f99",
+   "#2a2e36"
+  ],
+  "tag": "German premium",
+  "img": "images/mercedes-benz-c-class.jpg",
+  "uid": "seed-6",
+  "desc": ""
+ },
+ {
+  "n": "Mercedes-Benz GLC",
+  "b": "Mercedes-Benz",
+  "t": "SUV",
+  "y": 2020,
+  "k": 55000,
+  "p": 145000,
+  "c": [
+   "#1c2a3a",
+   "#070c14"
+  ],
+  "tag": "Premium SUV",
+  "img": "images/mercedes-benz-glc.jpg",
+  "uid": "seed-7",
+  "desc": ""
+ },
+ {
+  "n": "Genesis GV70",
+  "b": "Genesis",
+  "t": "SUV",
+  "y": 2022,
+  "k": 29000,
+  "p": 162000,
+  "c": [
+   "#5a4a3a",
+   "#1c1610"
+  ],
+  "tag": "Low mileage",
+  "img": "images/genesis-gv70.jpg",
+  "uid": "seed-8",
+  "desc": ""
+ }
+]
